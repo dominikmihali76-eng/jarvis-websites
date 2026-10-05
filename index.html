@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First Website – Portfolio</title>
+  <meta name="description" content="A clean, modern one-page personal portfolio with About, Projects, and Contact sections." />
+  <meta name="theme-color" content="#0d47a1" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231565c0'/%3E%3Cstop offset='1' stop-color='%231e88e5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect rx='12' width='64' height='64' fill='url(%23g)'/%3E%3Cpath d='M18 40c8 0 10-8 14-8s6 8 14 8' stroke='%23fff' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='24' cy='24' r='3' fill='%23fff'/%3E%3Ccircle cx='40' cy='24' r='3' fill='%23fff'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Homepage">Your Name</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 id="hero-title">Hi, I’m Your Name</h1>
+          <p class="subtitle">Frontend developer crafting accessible, responsive web experiences.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View my work</a>
+            <a class="btn btn-ghost" href="#contact">Contact me</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title" class="section-title">About</h2>
+        <div class="about-card">
+          <div class="avatar" aria-hidden="true" title="Avatar placeholder"></div>
+          <div class="about-text">
+            <p>
+              I’m a web developer with a passion for clean design and reliable, accessible code. I enjoy turning
+              complex ideas into simple, beautiful interfaces. When I’m not coding, I’m learning new tools and sharing what I discover.
+            </p>
+            <ul class="tags" aria-label="Skills">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Accessibility</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title" class="section-title">Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3 class="project-title">Project One</h3>
+              <p class="project-desc">A responsive landing page optimized for performance and accessibility.</p>
+              <ul class="mini-tags">
+                <li>HTML</li>
+                <li>CSS Grid</li>
+                <li>Performance</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="#" aria-label="Open live demo for Project One">Live Demo</a>
+                <a class="btn btn-primary" href="#" aria-label="Open source code for Project One">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3 class="project-title">Project Two</h3>
+              <p class="project-desc">A simple task tracker with local storage and keyboard-friendly controls.</p>
+              <ul class="mini-tags">
+                <li>JavaScript</li>
+                <li>LocalStorage</li>
+                <li>ARIA</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="#" aria-label="Open live demo for Project Two">Live Demo</a>
+                <a class="btn btn-primary" href="#" aria-label="Open source code for Project Two">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="thumb" aria-hidden="true"></div>
+            <div class="project-body">
+              <h3 class="project-title">Project Three</h3>
+              <p class="project-desc">A component library of reusable cards and buttons with focus states.</p>
+              <ul class="mini-tags">
+                <li>Design Systems</li>
+                <li>Components</li>
+                <li>Accessibility</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-ghost" href="#" aria-label="Open live demo for Project Three">Live Demo</a>
+                <a class="btn btn-primary" href="#" aria-label="Open source code for Project Three">Source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title" class="section-title">Contact</h2>
+        <div class="contact-wrap">
+          <div class="contact-card">
+            <h3>Get in touch</h3>
+            <p>Have a question or want to work together? Send me a message.</p>
+            <p><strong>Email:</strong> <a id="email-link" href="mailto:you@example.com">you@example.com</a></p>
+            <div class="socials" aria-label="Social links">
+              <a class="icon-link" href="#" aria-label="GitHub (placeholder)">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.1.82-.26.82-.58v-2.02c-3.34.73-4.04-1.41-4.04-1.41-.55-1.41-1.34-1.79-1.34-1.79-1.09-.75.08-.74.08-.74 1.21.09 1.85 1.25 1.85 1.25 1.07 1.83 2.8 1.3 3.49.99.11-.79.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.45 11.45 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.58A12 12 0 0 0 12 .5Z"/></svg>
+              </a>
+              <a class="icon-link" href="#" aria-label="LinkedIn (placeholder)">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.83v1.98h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.66 4.8 6.12V23h-4v-6.39c0-1.53-.03-3.5-2.13-3.5-2.13 0-2.46 1.66-2.46 3.38V23h-4V8.5z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+              <small class="error" id="name-error" role="alert" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+              <small class="error" id="email-error" role="alert" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <small class="error" id="message-error" role="alert" aria-live="polite"></small>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-help">This form opens your email app using a mailto link.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      <a class="to-top" href="#top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+</body>
+</html>
